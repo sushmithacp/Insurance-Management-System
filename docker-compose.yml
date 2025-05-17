@@ -35,18 +35,18 @@ services:
     image: mongo
     container_name: mongo-container
     environment:
-       - MONGO_INITDB_DATABASE=test2
+      - MONGO_INITDB_DATABASE=test2
     ports:
       - "27017:27017"
     volumes:
-    - mongo-data:/data/db
+      - mongo-data:/data/db
     networks:
       - mern-network
     restart: always
 
 volumes:
-mongo-data: 
+  mongo-data:
 
 networks:
   mern-network:
-  driver: bridge
+    driver: bridge

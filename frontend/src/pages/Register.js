@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import axios from 'axios';
+import Navbar from '../components/Navbar'
 
 function Register() {
   const [form, setForm] = useState({ username: '', password: '' });
@@ -12,13 +13,14 @@ function Register() {
   };
 
   return (
-   
+   <div>
+      <Navbar/>
     <form
       onSubmit={handleRegister}
       className="p-4 border rounded shadow-sm bg-light"
       style={{ maxWidth: '400px', margin: 'auto', marginTop: '50px' }}
     >
-      <h3 className="text-center mb-4">Register</h3>
+      <h3 className="text-center mb-4"><img src="https://static.insurancedekho.com/pwa/img/id-main-logo.svg" alt="" style={{width: 200}} ></img><hr/><p>Register</p></h3>
 
       <div className="mb-3">
         <label className="form-label">Username</label>
@@ -47,6 +49,7 @@ function Register() {
         <a href="/login">Login</a>
       </div>
     </form>
+    </div>
   );
 }
 

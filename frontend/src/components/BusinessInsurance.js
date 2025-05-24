@@ -1,27 +1,82 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import man from '../images/man.jpeg';
+import fire from '../images/fire.svg';
+import marineHull from '../images/marineHull.svg';
+import medicalcoverage from '../images/medicalcoverage.svg';
+import paccident from '../images/paccident.svg';
+import plant from '../images/plant.svg';
+import workmen from '../images/workmen.svg';
+import { useNavigate } from 'react-router-dom';
+import { Outlet } from 'react-router-dom'
+import bajaj from '../images/bajaj.png';
+import hdfc from '../images/hdfc.png';
+import sf from '../images/sf.png';
+import chola from '../images/chola.png';
+import Insurance from '../pages/Insurance';
+import POSP from '../pages/POSP'
+
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHashtag
+ } from '@fortawesome/free-solid-svg-icons';
 
 function BusinessInsurance() {
+    const navigate = useNavigate();
+  
   return (
       <div>
           <Navbar />
-          <div className="container mt-5">
+          <div className="container-fluid" style={{backgroundColor: "#eef5f6"}}>
               <div className="row" >
-                  <div className="col-6" mb-3>
-                      <h1>Aapke Business ka Best Insurance Kavach</h1>
-                      <p>Starting at just ₹8 per day*</p>
-                      <p>InsuranceDekho</p>
-                   
-                      <p> BadhteIndiaKaBharosa</p>
+                  <div className="col-1 mt-5" >
+                    </div>
+                  <div className="col-4 mt-5" >
+                      <h1 className="card-text mb-5">Aapke Business ka Best Insurance Kavach</h1>
+                      <h5 className="card-text mb-5"> <i>Starting at just ₹8 per day*</i></h5>
+                   <button type="submit" className="btn btn-danger mb-3 w-50" onClick={() => navigate('/popupbusiness')} style={{ borderRadius: '50px', marginRight: '10px' }}>Get A Quote</button><br/>
+                     
+                  
+<div style={{ display: 'flex', alignItems: 'center' }}>
+  <FontAwesomeIcon 
+    icon={faHashtag}  
+    style={{ color: "#4d9ad5", fontSize: "40px", marginRight: "10px" }}
+  />
+  <div>
+    <p style={{ margin: 0 }}><i>InsuranceDekho</i></p>
+    <p style={{ margin: 0 }}>BadhteIndiaKaBharosa</p>
+  </div>
+</div>
+
 
                   </div>
-                  <div className="col-6">
-      <img src="https://www.tataaia.com/content/dam/tataaialifeinsurancecompanylimited/blogs/life-insurance/when-you-must-terminate-life-insurance-policy/shutterstock_5273498111.jpg
-" className="d-block w-100" alt="..."  height="200" ></img>
+                  <div className="col-7">
+                   <img src={man} alt="image1"/>
 
                   </div>
-              </div>
+</div>
+
+          <div className="container mt-5" >
+
+  <div className='row'>
+<div className="col-2"><img src={fire} alt="image1" style={{width:'20'}}/><p>Fire & Burglary</p></div>
+<div className="col-2"><img src={marineHull} alt="image1" style={{width:'20'}}/><p>Specific Marine</p></div>
+<div className="col-2"><img src={medicalcoverage} alt="image1" style={{width:'20'}}/><p>Contractor’s Plant & Machinery</p></div>
+<div className="col-2"><img src={paccident} alt="image1" style={{width:'20'}}/><p>Workmen Compensation</p></div>
+<div className="col-2"><img src={plant} alt="image1" style={{width:'20'}}/><p>Group Medical Coverage</p></div>
+<div className="col-2"><img src={workmen} alt="image1" style={{width:'20'}}/><p>Group Personal Accident</p></div>
+</div>
+<hr/>
+
+                  <div className="col-12 mt-5">
+                    <h3 className="card-text text-center mb-3" >The InsuranceDekho Advantage</h3>
+                    <p className="card-text text-center mb-5">
+                      Understand your insurance policy options. Identify the best value. Enjoy peace of mind.
+                    </p>
+                  </div>
+
+           
               <div className="card-group">
   <div className="card">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIIAH5LogRoaUv6Uan9DE_p15hImEoX5Sjpw&s" className="card-img-top" alt="..."/>
@@ -48,8 +103,59 @@ function BusinessInsurance() {
     </div>
   </div>
 </div>
+<hr/>
+
+</div>
           </div>
-<Footer/>
+ <Insurance/>
+      <div className="container mt-5">
+  <div className="row">
+    <div className="col-12 text-center mb-4">
+      <h2><b>Our Insurance Partners</b></h2>
+      <p>We're associated with India's popular insurance companies.</p>
+    </div>
+
+    <div className="col-md-3 col-sm-6 mb-4">
+      <div className="card h-100 text-center">
+        <div className="card-body">
+          <img src={bajaj} alt="Bajaj Allianz Insurance" className="img-fluid mb-3" style={{ maxHeight: '100px' }} />
+          <h6 className="card-title">Bajaj Allianz Insurance</h6>
+        </div>
+      </div>
+    </div>
+
+    <div className="col-md-3 col-sm-6 mb-4">
+      <div className="card h-100 text-center">
+        <div className="card-body">
+          <img src={hdfc} alt="HDFC ERGO Insurance" className="img-fluid mb-3" style={{ maxHeight: '100px' }} />
+          <h6 className="card-title">HDFC ERGO Insurance</h6>
+        </div>
+      </div>
+    </div>
+
+    <div className="col-md-3 col-sm-6 mb-4">
+      <div className="card h-100 text-center">
+        <div className="card-body">
+          <img src={sf} alt="Royal Sundaram Insurance" className="img-fluid mb-3" style={{ maxHeight: '100px' }} /><br/><br/>
+          <h6 className="card-title">Royal Sundaram Insurance</h6>
+        </div>
+      </div>
+    </div>
+
+    <div className="col-md-3 col-sm-6 mb-4">
+      <div className="card h-100 text-center">
+        <div className="card-body">
+          <img src={chola} alt="Cholamandalam Insurance" className="img-fluid mb-3" style={{ maxHeight: '100px' }} />
+          <h6 className="card-title">Cholamandalam Insurance</h6>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+      <hr/>
+<POSP/>
+      <Outlet/>
 
       </div>
   )

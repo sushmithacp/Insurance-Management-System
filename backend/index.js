@@ -6,6 +6,11 @@ const router = require('./routes/insurance.route')
 const routerVerification = require('./routes/userRoutes')
 const paymentRoutes = require('./routes/insurancePaymentRoutes');
 const policyRoutes = require('./routes/insurancePolicy'); 
+const bikePolicyRoutes = require('./routes/bikeInsurancePolicy'); 
+const healthPoliciesRoutes = require('./routes/healthInsurancePolicy'); 
+const termPoliciesRoutes = require('./routes/termInsurancePolicy'); 
+const investmentPoliciesRoutes = require('./routes/investmentInsurancePolicy'); 
+
 const razorpayPayments = require('./routes/razorpayRoutes'); 
 const cors = require('cors');
 
@@ -18,6 +23,11 @@ app.use("/api/insurance", router)
 app.use(`/api/users`, routerVerification)
 app.use('/api/insurancePayment', paymentRoutes);
 app.use('/api/policies', policyRoutes);
+app.use('/api/bikePolicies', bikePolicyRoutes);
+app.use('/api/healthPolicies', healthPoliciesRoutes);
+app.use('/api/termPolicies', termPoliciesRoutes);
+app.use('/api/investmentPolicies', investmentPoliciesRoutes);
+
 app.use('/api/razorpayPayments', razorpayPayments);
 app.use('/api/payment', paymentRoutes);
 

@@ -4,6 +4,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFaceSmile, faBriefcase, faArrowAltCircleRight, faFileImage, faInbox
  } from '@fortawesome/free-solid-svg-icons';
 import Footer from '../components/Footer';
+ import facebook from '../images/facebook.svg';
+ import youtube from '../images/youtube.svg';
+ import insta from '../images/insta.svg';
+ import linkedin from '../images/linkedin.svg';
+ import tw from '../images/tw.svg';
+import happysmiles from '../images/happysmiles.svg';
+import google from '../images/google.svg';
+import file from '../images/file.svg';
 
 function POSP() {
   return (
@@ -38,43 +46,79 @@ function POSP() {
         
           
     
-    <div className="col-4">
+    <div className="col-3">
     
                 <div className="p-3 text-center"><b>Insurance Dekho</b></div>
                 <p><b>link: https://www.insurancedekho.com</b></p>
-                <p><FontAwesomeIcon icon={faBriefcase} style={{color: "blue", fontSize: "20px",marginRight: '20px'}}/>
-                <FontAwesomeIcon icon={faArrowAltCircleRight} style={{color: "blue", fontSize: "20px", marginRight: '20px'}}/>
-                <FontAwesomeIcon icon={faFileImage} style={{color: "blue", fontSize: "20px", marginRight: '20px'}}/>
-                <FontAwesomeIcon icon={faInbox} style={{color: "blue", fontSize: "20px", marginRight: '20px'}}/></p>
-                <p>Email : support@insurancedekho.com</p>
+              
+                 <img src={facebook} alt="image1" style={{width:'20',marginRight: '20px',marginBottom: '20px'}}/>
+                 <img src={youtube} alt="image1" style={{width:'20',marginRight: '20px',marginBottom: '20px'}}/>
+                 <img src={insta} alt="image1" style={{width:'20',marginRight: '20px',marginBottom: '20px'}}/>
+                 <img src={linkedin} alt="image1" style={{width:'20',marginRight: '20px',marginBottom: '20px'}}/>
+                 <img src={tw} alt="image1" style={{width:'20',marginRight: '20px',marginBottom: '20px'}}/>
+                 <p>Email : support@insurancedekho.com</p>
                 <p>Call : 755 1196 989</p>
                 
 
 
               </div>
-              <div className="col-3">
-                <div className="p-3 text-center"><b>Products</b></div>
-                 <p>Health Insurance Plans</p>
-                <p>Best Health Insurance Companies</p>
-                <p>Mediclaim Policy</p>
-                <p>Health Insurance Claim Settlement </p>
-                <p>Critical Health Insurance</p>
-              </div>
-              <div className="col-3">
-                <div className="p-3 text-center"><b>Policy</b></div>
-                <p>Postal Life Insurance Scheme</p>
-                <p>Life Insurance Types</p>
-                <p>Life Insurance Claim Settlement </p>
-                <p>Term Insurance Vs Life Insurance</p>
-                <p>Best Life Insurance Companies</p>
+              <div className="col-2">
+                <div className="p-3"><b>Products</b></div>
+                 <p>Car Insurance</p>
+                <p>Bike Insurance</p>
+                <p>Health Insurance</p>
+                <p>Life Insurance</p>
+                <p>Term Insurance</p>
+                <p>Investment</p>
+                <p>Business</p>
+                <p>Travel Insurance</p>
+                <p>Tax Saving Schemes</p>
+
               </div>
               <div className="col-2">
-                <div className="p-3 text-center"><b>General</b></div>
-                 <p>Investment Plans</p>
-                <p>Fixed Deposit</p>
-                <p>Tax-Saving Fixed</p>
-                <p>Child Investment Plans</p>
-                <p>Best Investment Plans</p>
+                <div className="p-3"><b>Policy</b></div>
+                <p>Privacy Policy</p>
+                <p>Grievance Redressal</p>
+                <p>Fraud Detection</p>
+                <p>Shipping Policy</p>
+                <p>Terms of Use</p>
+                <p>Cancellation & Refund</p>
+                <p>E-Insurance Account</p>
+              </div>
+              <div className="col-3">
+                <div className="p-3"><b>General</b></div>
+                <p>Contact Us</p>
+                <p>Feedback</p>
+                <p>Fraud identification</p>
+                <p>Disclaimer</p>
+                <p>Annual Reports/Annual Returns</p>
+                <p>Solicitation Process</p>
+                <p>ID Alumni Page</p>
+                <p>Corporate Social Responsibility</p>
+              </div>
+              <div className="col-2">
+                <div className="p-3"></div>
+                <div className="col-12" style={{ display: 'flex', alignItems: 'center',marginBottom: '20px' }}>
+                       <img src={happysmiles} alt="image1" style={{width:'20'}}/>
+                        <div>
+                          <p style={{ margin: 0 }}>11 Mn+</p>
+                          <p style={{ margin: 0 }}>Happy Smiles</p>
+                        </div>
+                      </div>
+                      <div className="col-12" style={{ display: 'flex', alignItems: 'center',marginBottom: '20px' }}>
+                       <img src={google} alt="image1" style={{width:'20'}}/>
+                        <div>
+                          <p style={{ margin: 0 }}>4.8</p>
+                          <p style={{ margin: 0 }}>Rated on Google</p>
+                        </div>
+                      </div>
+                      <div className="col-12" style={{ display: 'flex', alignItems: 'center' }}>
+                       <img src={file} alt="image1" style={{width:'20'}}/>
+                        <div>
+                          <p style={{ margin: 0 }}>95k+</p>
+                          <p style={{ margin: 0 }}>Claims Served</p>
+                        </div>
+                      </div>
               </div>
     </div>
     </div>

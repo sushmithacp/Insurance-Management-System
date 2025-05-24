@@ -4,6 +4,15 @@ import { faCar, faMotorcycle,faHeartPulse,faUmbrella,faCircleDollarToSlot,
   faBusinessTime,faPeopleRoof,faSackDollar,faCaretDown
  } from '@fortawesome/free-solid-svg-icons';
  import { useNavigate } from 'react-router-dom';
+ import car from '../images/car.svg';
+ import bike from '../images/bike.svg';
+ import health from '../images/health.svg';
+ import term from '../images/term.svg';
+ import investment from '../images/investment.svg';
+ import business from '../images/business.svg';
+ import familyhealth from '../images/familyhealth.svg';
+ import guaranteed from '../images/guaranteed.svg';
+ import more from '../images/more.svg';
 
 
 function Cards() {
@@ -12,7 +21,7 @@ function Cards() {
   return (
     
     <div className='container mt-5'>
-      <div className="card-border p-3">
+      <div className="card-border p-3 border border-light rounded" style={{backgroundColor:'white', borderRadius: '50'}}>
     <div className="row row-cols-1 row-cols-md-5 g-4">
  
  <div className="col">
@@ -20,8 +29,7 @@ function Cards() {
               style={{ cursor: "pointer" }}>
     <div className="card-body">
       <div style={{ margin: "5px 0" }}>
-        <FontAwesomeIcon icon={faCar}  style={{ color: "#cf208f", fontSize: "50px" }} 
-        />
+       <img src={car} alt="image1" style={{width:'20'}}/>
       </div>
       <h5 className="card-title">Car</h5>
       <p className="card-text">Insurance</p>
@@ -34,7 +42,7 @@ function Cards() {
               style={{ cursor: "pointer" }}>
     <div className="card-body">
       <div style={{ margin: "5px 0" }}>
-        <FontAwesomeIcon icon={faMotorcycle} style={{color: "#B197FC", fontSize: "50px"}} />
+        <img src={bike} alt="image1" style={{width:'20'}}/>
       </div>
       <h5 className="card-title">Bike</h5>
       <p className="card-text">Insurance</p>
@@ -47,7 +55,7 @@ function Cards() {
               style={{ cursor: "pointer" }}>
     <div className="card-body">
       <div style={{ margin: "5px 0" }}>
-        <FontAwesomeIcon icon={faHeartPulse} style={{color: "#63E6BE", fontSize: "50px"}} />
+        <img src={health} alt="image1" style={{width:'20'}}/>
       </div>
       <h5 className="card-title">Health</h5>
       <p className="card-text">Insurance</p>
@@ -60,7 +68,7 @@ function Cards() {
               style={{ cursor: "pointer" }}>
     <div className="card-body">
       <div style={{ margin: "5px 0" }}>
-        <FontAwesomeIcon icon={faUmbrella} style={{color: "#5c1aad", fontSize: "50px"}} />
+        <img src={term} alt="image1" style={{width:'20'}}/>
       </div>
       <h5 className="card-title">Term</h5>
       <p className="card-text">Insurance</p>
@@ -73,7 +81,7 @@ function Cards() {
               style={{ cursor: "pointer" }}>
     <div className="card-body">
       <div style={{ margin: "5px 0" }}>
-        <FontAwesomeIcon icon={faCircleDollarToSlot} style={{color: "#7eec94", fontSize: "50px"}} />
+      <img src={investment} alt="image1" style={{width:'20'}}/>
       </div>
       <h5 className="card-title">Investment</h5>
       <p className="card-text">Insurance</p>
@@ -86,7 +94,7 @@ function Cards() {
               style={{ cursor: "pointer" }}>
     <div className="card-body">
       <div style={{ margin: "5px 0" }}>
-        <FontAwesomeIcon icon={faBusinessTime} style={{color: "#b7ab24", fontSize: "50px"}} />
+        <img src={business} alt="image1" style={{width:'20'}}/>
       </div>
       <h5 className="card-title">Business</h5>
       <p className="card-text">Insurance</p>
@@ -98,7 +106,7 @@ function Cards() {
               style={{ cursor: "pointer" }}>
     <div className="card-body">
       <div style={{ margin: "5px 0" }}>
-        <FontAwesomeIcon icon={faPeopleRoof} style={{color: "#1eaea5", fontSize: "50px"}} />
+        <img src={familyhealth} alt="image1" style={{width:'20'}}/>
       </div>
       <h5 className="card-title">Family Health</h5>
       <p className="card-text">Insurance</p>
@@ -110,7 +118,7 @@ function Cards() {
               style={{ cursor: "pointer" }}>
     <div className="card-body">
       <div style={{ margin: "5px 0" }}>
-        <FontAwesomeIcon icon={faSackDollar} style={{color: "#d2b1be", fontSize: "50px"}} />
+        <img src={guaranteed} alt="image1" style={{width:'20'}}/>
       </div>
       <h5 className="card-title">Guaranteed</h5>
       <p className="card-text">Insurance</p>
@@ -122,7 +130,7 @@ function Cards() {
   <div className="card h-100 text-center">
     <div className="card-body">
       <div style={{ margin: "5px 0" }}>
-        <FontAwesomeIcon icon={faCaretDown} style={{color: "#244107", fontSize: "50px"}} />
+      <img src={more} alt="image1" style={{width:'20'}}/>
       </div>
       <h5 className="card-title">More</h5>
     </div>

@@ -1,12 +1,16 @@
 import { React,  useState, useEffect } from 'react'
 import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import Insurance from '../pages/Insurance';
+import POSP from '../pages/POSP'
 import { jwtDecode } from 'jwt-decode'; 
 import axios from 'axios';
+import bajaj from '../images/bajaj.png';
+import hdfc from '../images/hdfc.png';
+import sf from '../images/sf.png';
+import chola from '../images/chola.png';
 
 function CarInsuranceDetails() {
   const [policy, setPolicy] = useState(null);
-console.log("poliii",policy);
 
   useEffect(() => {
     axios.get('http://localhost:5000/api/policies') 
@@ -95,7 +99,7 @@ console.log("poliii",policy);
                     <h4 className="card-title">Car insurance starting from<b> ₹ 6/day*</b></h4>
                     <p className="card-text">Car No {'>'} Select Plan {'>'} Policy Issued</p>
                     <p>Insurance companies and agents utilize text messages for various purposes, including policy reminders, payment reminders, sales outreach, claims updates, and marketing promotions</p>
-                    <p style={{ color: "darkblue" }}>brand new car?</p>
+                    <p style={{ color: "darkblue" }}>Disclaimer: Actual Premium might vary basis your Coverage & Premium</p>
                   </div>
  <div className="col-4 d-flex align-items-center">
                     <img
@@ -119,8 +123,8 @@ console.log("poliii",policy);
     <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '20px' }}>
       <thead>
         <tr style={{ backgroundColor: '#f2f2f2' }}>
-          <th style={{ border: '1px solid #ddd', padding: '8px' }}>Policy ID</th>
-          <th style={{ border: '1px solid #ddd', padding: '8px' }}>Policy Number</th>
+          <th style={{ border: '1px solid #ddd', padding: '8px' }}>Car Policy ID</th>
+          <th style={{ border: '1px solid #ddd', padding: '8px' }}>Car Policy Number</th>
           <th style={{ border: '1px solid #ddd', padding: '8px' }}>Status</th>
           <th style={{ border: '1px solid #ddd', padding: '8px' }}>Start Date</th>
           <th style={{ border: '1px solid #ddd', padding: '8px' }}>End Date</th>
@@ -184,7 +188,54 @@ console.log("poliii",policy);
 
         </div>
       </div>
-<Footer/>
+<Insurance/>
+<div className="container mt-5">
+  <div className="row">
+    <div className="col-12 text-center mb-4">
+      <h2><b>Our Insurance Partners</b></h2>
+      <p>We're associated with India's popular insurance companies.</p>
+    </div>
+
+    <div className="col-md-3 col-sm-6 mb-4">
+      <div className="card h-100 text-center">
+        <div className="card-body">
+          <img src={bajaj} alt="Bajaj Allianz Insurance" className="img-fluid mb-3" style={{ maxHeight: '100px' }} />
+          <h6 className="card-title">Bajaj Allianz Insurance</h6>
+        </div>
+      </div>
+    </div>
+
+    <div className="col-md-3 col-sm-6 mb-4">
+      <div className="card h-100 text-center">
+        <div className="card-body">
+          <img src={hdfc} alt="HDFC ERGO Insurance" className="img-fluid mb-3" style={{ maxHeight: '100px' }} />
+          <h6 className="card-title">HDFC ERGO Insurance</h6>
+        </div>
+      </div>
+    </div>
+
+    <div className="col-md-3 col-sm-6 mb-4">
+      <div className="card h-100 text-center">
+        <div className="card-body">
+          <img src={sf} alt="Royal Sundaram Insurance" className="img-fluid mb-3" style={{ maxHeight: '100px' }} /><br/><br/>
+          <h6 className="card-title">Royal Sundaram Insurance</h6>
+        </div>
+      </div>
+    </div>
+
+    <div className="col-md-3 col-sm-6 mb-4">
+      <div className="card h-100 text-center">
+        <div className="card-body">
+          <img src={chola} alt="Cholamandalam Insurance" className="img-fluid mb-3" style={{ maxHeight: '100px' }} />
+          <h6 className="card-title">Cholamandalam Insurance</h6>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+      <hr/>
+<POSP/>
 
     </div>
   )

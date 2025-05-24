@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Navbar from '../components/Navbar'
 
 function Profile() {
   const [data, setData] = useState(null);
@@ -16,6 +17,9 @@ function Profile() {
   }, []);
 
   return (
+    <div>
+      <Navbar/>
+    
     <div style={{ padding: '20px', fontFamily: 'sans-serif' }}>
       <h2>User Profile</h2>
 
@@ -67,6 +71,7 @@ function Profile() {
       ) : (
         'Loading...'
       )}
+    </div>
     </div>
   );
 }

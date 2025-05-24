@@ -8,6 +8,7 @@ import Renew from './pages/Renew';
 import Support from './pages/Support';
 import News from './pages/News';
 import POSP from './pages/POSP';
+import Popupbusiness from './components/Popupbusiness'
 import CarInsuranceDetails from './components/CarInsuranceDetails'
 import BikeInsuranceDetails from './components/BikeInsuranceDetails'
 import HealthInsurance from './components/HealthInsurance'
@@ -16,6 +17,15 @@ import BusinessInsurance from './components/BusinessInsurance'
 import TermInsurance from './components/TermInsurance'
 import InvestmentInsurance from './components/InvestmentInsurance'
 import GuaranteedInsurance from './components/GuaranteedInsurance'
+import CarouseInsurance from './components/CarouseInsurance';
+import NewDelhi from './components/NewDelhi';
+import Pune from './components/Pune';
+import Hyderabad from './components/Hyderabad';
+import Bangaluru from './components/Bangaluru';
+import Kolkata from './components/Kolkata';
+import Noida from './components/Noida';
+import Lucknow from './components/Lucknow';
+import Gurgaon from './components/Gurgaon';
 
 import Register from './pages/Register';
 import Login from './pages/Login';
@@ -36,6 +46,7 @@ function App() {
 <Route  path='/support' element={<Support/>} />
 <Route  path='/news' element={<News/>} />
 <Route  path='/posp' element={<POSP/>} />
+<Route  path='/popupbusiness' element={<Popupbusiness/>} />
 <Route path='/car-insurance' element={<CarInsuranceDetails/>} />
 <Route path='/bike-insurance' element={<BikeInsuranceDetails/>} />
 <Route path='/health-insurance' element={<HealthInsurance/>} />
@@ -44,7 +55,15 @@ function App() {
 <Route path='/term-insurance' element={<TermInsurance/>} />
 <Route path='/investment-insurance' element={<InvestmentInsurance/>} />
 <Route path='/guaranteed-insurance' element={<GuaranteedInsurance/>} />
-
+<Route path='/carouse-insurance' element={<CarouseInsurance/>} />
+<Route path='/newDelhi-insurance' element={<NewDelhi/>} />
+<Route path='/pune-insurance' element={<Pune/>} />
+<Route path='/Hyderabad-insurance' element={<Hyderabad/>} />
+<Route path='/Bangaluru-insurance' element={<Bangaluru/>} />
+<Route path='/Kolkata-insurance' element={<Kolkata/>} />
+<Route path='/Noida-insurance' element={<Noida/>} />
+<Route path='/Lucknow-insurance' element={<Lucknow/>} />
+<Route path='/Gurgaon-insurance' element={<Gurgaon/>} />
 
 <Route path="/register" element={<Register />} />
 <Route path="/login" element={<Login />} />

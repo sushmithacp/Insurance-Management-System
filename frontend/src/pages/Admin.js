@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './Admin.css'
+import Navbar from '../components/Navbar'
 
 function Admin() {
   const navigate = useNavigate();
@@ -87,7 +88,7 @@ const handleUpdate = (e) => {
 
   return (
     <div>
-     
+     <Navbar/>
       {policy && policy.length > 0 && (
   <div className="mt-3 text-center">
     <h2 style={{ color: "grey" }}><b>Top Car Insurance Policies</b></h2>

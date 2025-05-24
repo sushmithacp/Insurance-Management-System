@@ -88,8 +88,8 @@ function TermInsurance() {
     <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '20px' }}>
       <thead>
         <tr style={{ backgroundColor: '#f2f2f2' }}>
-          <th style={{ border: '1px solid #ddd', padding: '8px' }}>Bike Policy ID</th>
-          <th style={{ border: '1px solid #ddd', padding: '8px' }}>Bike Policy Number</th>
+          <th style={{ border: '1px solid #ddd', padding: '8px' }}>Term Policy ID</th>
+          <th style={{ border: '1px solid #ddd', padding: '8px' }}>Term Policy Number</th>
           <th style={{ border: '1px solid #ddd', padding: '8px' }}>Status</th>
           <th style={{ border: '1px solid #ddd', padding: '8px' }}>Start Date</th>
           <th style={{ border: '1px solid #ddd', padding: '8px' }}>End Date</th>
